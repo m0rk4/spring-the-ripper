@@ -12,6 +12,7 @@
     <!-- OR -->
     <!--    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>-->
 
+    <bean class="org.example.DeprecationHandlerBeanFactoryPostProcessor"/>
     <bean class="org.example.PostProxyInvokerContextListener"/>
     <bean class="org.example.ProfilingAnnotationBeanPostProcessor"/>
     <bean class="org.example.InjectRandomIntAnnotationBeanPostProcessor"/>
