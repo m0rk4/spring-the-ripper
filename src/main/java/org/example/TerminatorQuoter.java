@@ -27,10 +27,15 @@ public class TerminatorQuoter implements Quoter {
         this.message = message;
     }
 
+    public void setRepeat(int repeat) {
+        System.out.println("2: Setter invoked with: " + repeat);
+        this.repeat = repeat;
+    }
+
     @Override
     @PostProxy
     public void sayQuote() {
-        System.out.println("4: Triggered by context refreshed event.");
+        System.out.println("4: Triggered by context refreshed event or by direct method invocations.");
         for (int i = 0; i < repeat; i++) {
             System.out.println("Message: " + message);
         }
